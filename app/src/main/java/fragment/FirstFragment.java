@@ -47,6 +47,6 @@ private EditText txtfirst, txtsecond;
         int first=Integer.parseInt(txtfirst.getText().toString());
         int second=Integer.parseInt(txtfirst.getText().toString());
         int result=first+second;
-        Toast.makeText(getActivity(), "Sum of two number is:" +result, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getActivity(), "Sum of two number =" +result, Toast.LENGTH_SHORT).show();
     }
 }
