@@ -34,6 +34,7 @@ private  Boolean status=true;
             FirstFragment firstFragment=new FirstFragment();
             fragmentTransaction.replace(R.id.linearlayout1, firstFragment);
             fragmentTransaction.commit();
+            fragmentTransaction.addToBackStack(null);
             btn1.setText("Load Second Fragment");
             status=false;
         }
@@ -41,6 +42,7 @@ private  Boolean status=true;
             SecondFragment secondFragment=new SecondFragment();
             fragmentTransaction.replace(R.id.linearlayout1, secondFragment);
             fragmentTransaction.commit();
+            fragmentTransaction.addToBackStack(null);
             btn1.setText("Load First Fragment");
             status=true;
         }
